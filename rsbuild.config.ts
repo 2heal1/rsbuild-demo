@@ -1,6 +1,11 @@
 import { defineConfig } from '@rsbuild/core';
-import { pluginReact } from '@rsbuild/plugin-react';
 
 export default defineConfig({
-  plugins: [pluginReact()],
+  output:{
+    sourceMap:true,
+    filename:{
+      css:'index.css',
+      js:'index.js'
+    }
+  },
 });

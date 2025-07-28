@@ -5,17 +5,15 @@
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
-    "preview": "rsbuild preview"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "preview": "rsbuild preview",
+    "validate-css": "TYPE=CSS node validateSourceMap.js",
+    "validate-js": "TYPE=JS node validateSourceMap.js"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.0.1-beta.5",
-    "@rsbuild/plugin-react": "1.0.1-beta.5",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@rsbuild/core": "1.3.22",
     "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "source-map": "^0.7.6"
   }
 }
