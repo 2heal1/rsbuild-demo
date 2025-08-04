@@ -4,16 +4,20 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "rsbuild dev --open",
-    "build": "rsbuild build",
+    "build:bug": "ADD_INCLUDE=true rsbuild build",
+    "build:normal": "rsbuild build",
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^6.21.1",
+    "react-router-dom": "^6.21.1"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.0.1-beta.5",
-    "@rsbuild/plugin-react": "1.0.1-beta.5",
+    "@rsbuild/core": "1.4.13",
+    "@rsbuild/plugin-react": "1.3.4",
+    "@types/node": "^24.2.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.5.2"
